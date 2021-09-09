@@ -18,139 +18,139 @@ URL addresses that you need to use to connect to SMS API are:
  $sentto	  = '';</br>
  $report   = '';</br>
  $sms_lang = '';</br>
- $response_type = '';
-# Parameter Description ⬇️
-👉 $title	:varchar Write here your Sender ID as it is in your account.
-👉 $api_key :varchar Your API key on your account will be placed here
-👉 $text :text The message text
-👉 $sentto :int	Recipient's mobile phone number
-👉 $report :int	Option to display the details of the sending process if the value is 1, the report appears, or 0 for cancellation
-👉 $sms_lang :int	This parameter describes the encoding of the message text. UTF-8 is set as default
-👉 $response_type :	int	Response is sending JSON or Array
+ $response_type = '';</br>
+# Parameter Description ⬇️</br>
+👉 $title	:varchar Write here your Sender ID as it is in your account.</br>
+👉 $api_key :varchar Your API key on your account will be placed here</br>
+👉 $text :text The message text</br>
+👉 $sentto :int	Recipient's mobile phone number</br>
+👉 $report :int	Option to display the details of the sending process if the value is 1, the report appears, or 0 for cancellation</br>
+👉 $sms_lang :int	This parameter describes the encoding of the message text. UTF-8 is set as default</br>
+👉 $response_type :	int	Response is sending JSON or Array</br>
 
 
 
-# Call Back Reports ✔️
-🧪️
-Array
-(
-    [result] => true
-    [sms_id] => 1000007721
-    [number_of_sms] => 1
-    [result_code] => TS-1024
-    [result_message] => The message was sent successfully
-    [sms_lang] => Arabic
-    [country] => Turkey-TR
+# Call Back Reports ✔️</br>
+🧪️</br>
+Array</br>
+(</br>
+    [result] => true</br>
+    [sms_id] => 1000007721</br>
+    [number_of_sms] => 1</br>
+    [result_code] => TS-1024</br>
+    [result_message] => The message was sent successfully</br>
+    [sms_lang] => Arabic</br>
+    [country] => Turkey-TR</br>
 )
 
-# Call Back Description ⬇️
+# Call Back Description ⬇️</br>
 
-👉 result :	The result of the operation, if successful, appears true, and if the transmission fails, it appears false
-👉 sms_id	: Message ID. Length of this parameter in each request may vary
-👉 number_of_sms : Number of used credits
-👉 result_code :	Status code, list of codes can be find in Response code
-👉 result_message :	The message of the sent operation .. SMS appears to you in the event of success or failure
-👉 sms_lang :	The content of the message you sent appears in any language
-👉 country :	The name of the country to which the message was sent
+👉 result :	The result of the operation, if successful, appears true, and if the transmission fails, it appears false</br>
+👉 sms_id	: Message ID. Length of this parameter in each request may vary</br>
+👉 number_of_sms : Number of used credits</br>
+👉 result_code :	Status code, list of codes can be find in Response code</br>
+👉 result_message :	The message of the sent operation .. SMS appears to you in the event of success or failure</br>
+👉 sms_lang :	The content of the message you sent appears in any language</br>
+👉 country :	The name of the country to which the message was sent</br>
 
-# github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.php
+# github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.php</br>
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
-# Sending SMS GET  ✔️
--How to send a message through the API in GET format
--The variables sent through the link are - variables and options as I mentioned above
+# Sending SMS GET  ✔️</br>
+-How to send a message through the API in GET format</br>
+-The variables sent through the link are - variables and options as I mentioned above</br>
 🖇🖇
-https://turkeysms.com.tr/api/v3/get/get.php?api_key=API_KEY_HERE&mobile=MOBILE_HERE&title=TITLE_HERE&text=SMS_TEXT_HERE&report=1&lang=2&response_type=json
+https://turkeysms.com.tr/api/v3/get/get.php?api_key=API_KEY_HERE&mobile=MOBILE_HERE&title=TITLE_HERE&text=SMS_TEXT_HERE&report=1&lang=2&response_type=json</br>
 
-github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_get.php
+github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_get.php</br>
 ----------------------------------------------------------------------------------------------------------------------------------
 
-# Send options ⚙️
+# Send options ⚙️</br>
 
--Send options are intended to be characteristics of a message sent through an API
--Such as the language of the message content or the appearance of a report
+-Send options are intended to be characteristics of a message sent through an API</br>
+-Such as the language of the message content or the appearance of a report</br>
 
-# Operation report display options
+# Operation report display options</br>
+</br>
+👉 report$	</br>
+1⃣ If the value is for this variable 1 An operation report will appear</br>
 
-👉 report$	
-1⃣ If the value is for this variable 1 An operation report will appear
+0⃣ If the value is for this variable 0 The report will not appear after performing the operation</br>
 
-0⃣ If the value is for this variable 0 The report will not appear after performing the operation
+# Message content language options</br>
 
-# Message content language options
+👉 sms_lang$</br>
+0⃣ If the value is for this variable 0 Message content will be in English</br>
 
-👉 sms_lang$
-0⃣ If the value is for this variable 0 Message content will be in English
+1⃣ If the value is for this variable 1 The content of the message in the Turkish language will support the Turkish characters</br>
 
-1⃣ If the value is for this variable 1 The content of the message in the Turkish language will support the Turkish characters
+2⃣ If the value is for this variable 2 The content of the message will support the Arabic language or UTF-8 coding</br></br>
 
-2⃣ If the value is for this variable 2 The content of the message will support the Arabic language or UTF-8 coding
+# Call Back Response</br>
 
-# Call Back Response
+👉 response_type$	</br>
+-If the value is for this variable 🖇JSON The response will be in json format</br>
 
-👉 response_type$	
--If the value is for this variable 🖇JSON The response will be in json format
+-If the value is for this variable 🖇PHP The response will be in php format</br>
 
--If the value is for this variable 🖇PHP The response will be in php format
+----------------------------------------------------------------------------------------------------------------------------------</br>
+# Response code ❕</br>
 
-----------------------------------------------------------------------------------------------------------------------------------
-# Response code ❕
+-When sending via direct connection api, the server will send you a response to the process in the form of a code</br>
+-These codes explain to you the result of the operation that you have performed</br>
 
--When sending via direct connection api, the server will send you a response to the process in the form of a code
--These codes explain to you the result of the operation that you have performed
-
-# Response code  ⬇️
-👉TS-1024 :	Message sent successfully
-👉TS-1025	: The mobile number has not been entered. The phone number is empty
-👉TS-1026	: Message text is empty .. No message text has been written
-👉TS-1027	: There is insufficient balance in your account
-👉TS-1028	: Sender ID is not active for your account
-👉TS-1029	: The Sender ID does not exist .. Please make sure you type correctly
-👉TS-1030	: Your account is inactive with the SMS service provider
-👉TS-1031	: The api-key is invalid
-👉TS-1032	: The number to which the message is sent is international outside Turkey. Your account is not activated for international SMS
+# Response code  ⬇️</br>
+👉TS-1024 :	Message sent successfully</br>
+👉TS-1025	: The mobile number has not been entered. The phone number is empty</br>
+👉TS-1026	: Message text is empty .. No message text has been written</br>
+👉TS-1027	: There is insufficient balance in your account</br>
+👉TS-1028	: Sender ID is not active for your account</br>
+👉TS-1029	: The Sender ID does not exist .. Please make sure you type correctly</br>
+👉TS-1030	: Your account is inactive with the SMS service provider</br>
+👉TS-1031	: The api-key is invalid</br>
+👉TS-1032	: The number to which the message is sent is international outside Turkey. Your account is not activated for international SMS</br>
 👉TS-1033	: The data sent through the link is incorrect
-👉TS-1034	: The mobile number to which the message was sent is invalid
-
+👉TS-1034	: The mobile number to which the message was sent is invalid</br>
 ----------------------------------------------------------------------------------------------------------------------------------
-# Checking the validity of the code ✔️
+# Checking the validity of the code ✔️</br>
 
--Verification of authorization code could be made by POST request to API with two parameters, recipient mobile phone number
+-Verification of authorization code could be made by POST request to API with two parameters, recipient mobile phone number</br>
 
-https://turkeysms.com.tr/api/v3/sms-durumu/sms_durumu.php?api_key=API_KEY_HERE&sms_id=SMS_ID_HERE&response_type=php
+https://turkeysms.com.tr/api/v3/sms-durumu/sms_durumu.php?api_key=API_KEY_HERE&sms_id=SMS_ID_HERE&response_type=php</br>
 
--The variables are sent through the link like 
-$api_key  = '';
-$sms_id	  = '';
-$response_type = '';
+-The variables are sent through the link like </br>
+$api_key  = '';</br>
+$sms_id	  = '';</br>
+$response_type = '';</br>
 
-# Parameter Description ⬇️
-👉 api_key$ : varchar	Your API key on your account will be placed here
-👉 sms_id$  :int	 Message ID
-👉 response_type$:	int	Response is sending JSON or PHP
+# Parameter Description ⬇️</br>
+👉 api_key$ : varchar	Your API key on your account will be placed here</br>
+👉 sms_id$  :int	 Message ID</br>
+👉 response_type$:	int	Response is sending JSON or PHP</br>
 
-# Call Back Reports
+# Call Back Reports</br>
 
-# Example Response 🧪️
-Array
-(
-    [result] => true
-    [sender_id] => SenderID
-    [date_of_sending] => 2021-01-01
-    [time_of_sending] => 13:10:00
-    [sms_status] => Number received the message
-    [sms_status_code] => TS-1024
-    [sms_balance] => 1 SMS
-    [operator] => Turkcell
+# Example Response 🧪️</br>
+Array</br>
+(</br>
+    [result] => true</br>
+    [sender_id] => SenderID</br>
+    [date_of_sending] => 2021-01-01</br>
+    [time_of_sending] => 13:10:00</br>
+    [sms_status] => Number received the message</br>
+    [sms_status_code] => TS-1024</br>
+    [sms_balance] => 1 SMS</br>
+    [operator] => Turkcell</br>
 )
 
-# Parameter Description 🔎
+# Parameter Description 🔎</br>
 
-👉 result:	The result of the operation, if successful, appears true, and if the transmission fails, it appears false
-👉 sender_id:	Message ID. Length of this parameter in each request may vary
-👉 date_of_sending:	The date the message was sent
-👉 time_of_sending	:The time the message was sent
-👉 sms_status:	Message Status - Delivered - Not delivered - Number out of coverage
-👉 sms_status_code:	Status Code
-👉 sms_balance:	Number of used credits
-👉 operator:	The name of the company to which the number belongs
+👉 result:	The result of the operation, if successful, appears true, and if the transmission fails, it appears false</br>
+👉 sender_id:	Message ID. Length of this parameter in each request may vary</br>
+👉 date_of_sending:	The date the message was sent</br>
+👉 time_of_sending	:The time the message was sent</br>
+👉 sms_status:	Message Status - Delivered - Not delivered - Number out of coverage</br>
+👉 sms_status_code:	Status Code</br>
+👉 sms_balance:	Number of used credits</br>
+👉 operator:	The name of the company to which the number belongs</br>
