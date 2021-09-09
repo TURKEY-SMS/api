@@ -75,18 +75,18 @@ github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_
 # Operation report display options</br>
 </br>
 👉 report$	</br>
-1⃣ If the value is for this variable 1 An operation report will appear</br>
-
-0⃣ If the value is for this variable 0 The report will not appear after performing the operation</br>
+-If the value is for this variable 1 An operation report will appear</br>
+ 
+-If the value is for this variable 0 The report will not appear after performing the operation</br>
 
 # Message content language options</br>
 
 👉 sms_lang$</br>
-0⃣ If the value is for this variable 0 Message content will be in English</br>
+-If the value is for this variable 0 Message content will be in English</br>
 
-1⃣ If the value is for this variable 1 The content of the message in the Turkish language will support the Turkish characters</br>
+-If the value is for this variable 1 The content of the message in the Turkish language will support the Turkish characters</br>
 
-2⃣ If the value is for this variable 2 The content of the message will support the Arabic language or UTF-8 coding</br></br>
+-If the value is for this variable 2 The content of the message will support the Arabic language or UTF-8 coding</br></br>
 
 # Call Back Response</br>
 
