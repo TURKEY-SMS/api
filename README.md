@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------
  # Sending SMS POST ✔️
 URL addresses that you need to use to connect to SMS API are:
-**URL Adresses** : www.turkeysms.com.tr/api/v3/gonder/add-content
+**URL Adresses** : api/v3/gonder/add-content
 # Parameter  ⁉️
  $title    = '';</br>
  $api_key  = '';</br>
@@ -123,7 +123,7 @@ github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_
 👉TS-1030	: Your account is inactive with the SMS service provider</br>
 👉TS-1031	: The api-key is invalid</br>
 👉TS-1032	: The number to which the message is sent is international outside Turkey. Your account is not activated for international SMS</br>
-👉TS-1033	: The data sent through the link is incorrect
+👉TS-1033	: The data sent through the link is incorrect</br>
 👉TS-1034	: The mobile number to which the message was sent is invalid</br>
 
 ----------------------------------------------------------------------------------------------------------------------------------
