@@ -64,6 +64,7 @@ Array</br>
 turkeysms.com.tr/api/v3/get/get.php?api_key=API_KEY_HERE&mobile=MOBILE_HERE&title=TITLE_HERE&text=SMS_TEXT_HERE&report=1&lang=2&response_type=json</br>
 
 github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_get.php</br>
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 # Send options ⚙️</br>
