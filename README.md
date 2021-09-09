@@ -54,8 +54,19 @@ Array</br>
 👉 sms_lang :	The content of the message you sent appears in any language</br>
 👉 country :	The name of the country to which the message was sent</br>
 
-# github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.php</br>
-
+ github PHP        :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.php</br>
+ github JAVA       :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.java</br>
+ github  JS        :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.js</br>
+ github PYTHON     :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.py</br>
+ github RUBY       :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.rb</br>
+ github  C#        :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.cs</br>
+ github C(LibCURL) :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.c</br>
+ github NodeJS     :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.js</br>
+ github ObjectiveC :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.h</br>
+ github  GO        :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.go</br>
+ github SWIFT      :  https://github.com/TURKEY-SMS/api/blob/main/send_sms/POST/turkeysms_api_v3.swift</br>
+ 
+ 
 ----------------------------------------------------------------------------------------------------------------------------------
 
 # Sending SMS GET  ✔️</br>
