@@ -95,7 +95,7 @@ github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_
 
 -If the value is for this variable 🖇PHP The response will be in php format</br>
 
-----------------------------------------------------------------------------------------------------------------------------------</br>
+----------------------------------------------------------------------------------------------------------------------------------
 # Response code ❕</br>
 
 -When sending via direct connection api, the server will send you a response to the process in the form of a code</br>
@@ -113,6 +113,7 @@ github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_
 👉TS-1032	: The number to which the message is sent is international outside Turkey. Your account is not activated for international SMS</br>
 👉TS-1033	: The data sent through the link is incorrect
 👉TS-1034	: The mobile number to which the message was sent is invalid</br>
+
 ----------------------------------------------------------------------------------------------------------------------------------
 # Checking the validity of the code ✔️</br>
 
