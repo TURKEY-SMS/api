@@ -3,21 +3,21 @@
 -To be able to use the API service, you must have some conditions within your account, so that the connection with the messaging service is correct and without any problem
 -These conditions are:
 
-👉**Active account** :So that your account is active in the messaging service and your control panel is fully activated
-👉**The balance**:	You must have a message balance in your account in order to be able to use API
-👉**Sender ID** : Your account must have a fully verified Sender ID
+👉**Active account** :So that your account is active in the messaging service and your control panel is fully activated </br>
+👉**The balance**:	You must have a message balance in your account in order to be able to use API</br>
+👉**Sender ID** : Your account must have a fully verified Sender ID</br>
 
 ----------------------------------------------------------------------------------------------------------------------------------
  # Sending SMS POST ✔️
 URL addresses that you need to use to connect to SMS API are:
 **URL Adresses** : https://www.turkeysms.com.tr/api/v3/gonder/add-content
 # Parameter  ⁉️
- $title    = '';
- $api_key  = '';
- $text	  = '';
- $sentto	  = '';
- $report   = '';
- $sms_lang = '';
+ $title    = '';</br>
+ $api_key  = '';</br>
+ $text	  = '';</br>
+ $sentto	  = '';</br>
+ $report   = '';</br>
+ $sms_lang = '';</br>
  $response_type = '';
 # Parameter Description ⬇️
 👉 $title	:varchar Write here your Sender ID as it is in your account.
