@@ -1,4 +1,5 @@
-# turkeysmsapi
+# TURKEY SMS API
+----------------------------------------------------------------------------------------------------------------------------------
 # Requirements 🗒
 -To be able to use the API service, you must have some conditions within your account, so that the connection with the messaging service is correct and without any problem
 -These conditions are:
