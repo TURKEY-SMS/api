@@ -10,7 +10,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------
  # Sending SMS POST ✔️
 URL addresses that you need to use to connect to SMS API are:
-**URL Adresses** : https://www.turkeysms.com.tr/api/v3/gonder/add-content
+**URL Adresses** : www.turkeysms.com.tr/api/v3/gonder/add-content
 # Parameter  ⁉️
  $title    = '';</br>
  $api_key  = '';</br>
@@ -61,7 +61,7 @@ Array</br>
 -How to send a message through the API in GET format</br>
 -The variables sent through the link are - variables and options as I mentioned above</br>
 🖇🖇
-https://turkeysms.com.tr/api/v3/get/get.php?api_key=API_KEY_HERE&mobile=MOBILE_HERE&title=TITLE_HERE&text=SMS_TEXT_HERE&report=1&lang=2&response_type=json</br>
+turkeysms.com.tr/api/v3/get/get.php?api_key=API_KEY_HERE&mobile=MOBILE_HERE&title=TITLE_HERE&text=SMS_TEXT_HERE&report=1&lang=2&response_type=json</br>
 
 github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_get.php</br>
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ github : https://github.com/TURKEY-SMS/api/blob/main/send_sms/GET/turkeysms_api_
 
 -Verification of authorization code could be made by POST request to API with two parameters, recipient mobile phone number</br>
 
-https://turkeysms.com.tr/api/v3/sms-durumu/sms_durumu.php?api_key=API_KEY_HERE&sms_id=SMS_ID_HERE&response_type=php</br>
+turkeysms.com.tr/api/v3/sms-durumu/sms_durumu.php?api_key=API_KEY_HERE&sms_id=SMS_ID_HERE&response_type=php</br>
 
 -The variables are sent through the link like </br>
 $api_key  = '';</br>
